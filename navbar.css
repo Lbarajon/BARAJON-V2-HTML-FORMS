@@ -1,0 +1,95 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Sunny;
+    src: url(fonts/Sunny\ Spells\ Basic.ttf);
+}
+
+@font-face {
+    font-family: Duck;
+    src: url(fonts/Copyduck.ttf);
+}
+
+.navbar{
+    width: 100%;  
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    color: rgb(5, 5, 5);
+    font-size: 40px;
+    font-family: Duck;
+}
+
+.logo:hover{
+    cursor: pointer;
+    color:#ffaa80;
+    transition: .10s;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Sunny;
+    color: black;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color:#ffaa80;
+    transition: .10s;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ffaa80;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    transition: .10s;
+    font-family: Sunny;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.navbar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ffaa80;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px;
+    }
+}

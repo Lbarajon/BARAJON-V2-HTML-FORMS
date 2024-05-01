@@ -1,0 +1,250 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Sunny;
+    src: url(fonts/Sunny\ Spells\ Basic.ttf);
+}
+
+@font-face {
+    font-family: Duck;
+    src: url(fonts/Copyduck.ttf);
+}
+
+.toplayer{
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    font-family: Sunny;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-family: Sunny;
+    font-size: 40px;
+    font-weight: 5px;
+}
+
+.card{
+    width: 200px;
+    height: 240px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.card1{
+    background-image: url(pictures/macaroon.png);
+}
+
+.card2{
+    background-image: url(pictures/waffle.png);
+    
+}
+
+.card3{
+    background-image: url(pictures/brownies.png);
+}
+
+.card4{
+    background-image: url(pictures/cookie.png);
+}
+
+.card:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+h5{
+    font-family: Sunny;
+    font-size: 20px;
+    text-shadow: 0 0 5px #868282;
+    color: rgb(252, 252, 252);
+}
+
+@media (max-width: 700px) {
+    .col {
+        flex-basis: 100%; 
+    }
+
+    .card {
+        width: 90%;      
+    }
+}
+
+.midlayer{
+    width: 100%;
+    padding: 50px 0px;
+    margin-top: 5px;
+}
+
+.title h2{
+    text-align: center;
+    font-family: Sunny;
+    font-size: 50px;
+}
+
+.title h3{
+    text-align: center;
+    font-family: Sunny;
+    font-size: 40px;
+}
+
+.title h2:hover{
+    cursor: pointer;
+    color: #ffaa80;
+    transition: .01s;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+    margin-bottom: 30px;
+}
+
+.menu{
+    width: 200px;
+    height: 260px;
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 60px;
+    position: relative;
+
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    transition: 1.03s;
+}
+
+.menu:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.menu1{
+    background-image: url(pictures/blueberry\ cheesacake.png);
+}
+
+.menu2{
+    background-image: url(pictures/Caramel.png);
+}
+
+.menu3{
+    background-image: url(pictures/pancake.png);
+}
+.menu4{
+    background-image: url(pictures/donutchoco.png);
+}
+
+.menu5{
+    background-image: url(pictures/donutstrawberry.png);
+}
+
+.menu6{
+    background-image: url(pictures/donutvanilla.png);
+}
+
+h4{
+    margin-top: 260px;
+    font-family: Sunny;
+    font-size: 20px;
+    text-shadow: 0 0 3px #868282;
+    color: rgb(12, 11, 11);
+}
+
+.menu .button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ffaa80;
+    font-weight: bold;
+    color: black;
+    font-size: 23px;
+    transition: .3s;
+    font-family: Sunny;
+}
+
+.footer{
+    background: #ffaa80;
+    margin-top: 20px;
+    padding: 20px 20px 10px;
+}
+
+.footer .socials{
+    display:flex;
+    justify-content: center;
+}
+
+.socials a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.socials i{
+    font-size: 40px;
+    color: black;
+}
+
+.socials i:hover{
+    color: white;
+}
+
+.footernav{
+    margin: 10px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a{
+    color: black;
+    margin: 20px;
+    font-family: Sunny;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footernav ul li a:hover{
+    color: white;
+}
+
+.footerbottom p{
+    color: black;
+    font-family: Sunny;
+    text-align: center;
+}
+
+.designer{
+    font-family: Duck;
+    opacity: .7;
+}
